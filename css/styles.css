@@ -1,0 +1,128 @@
+/* Background Image - Use your own photo! */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/plane.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.85;
+  filter: brightness(0.9);
+}
+
+/* Main Content */
+.main-content {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Typography */
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.header-title {
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  color: #2a4365;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Author Style */
+.author-name {
+  font-weight: 600;
+  color: rgb(10, 47, 110);
+  text-decoration: underline;
+  text-decoration-color: #f6ad55;
+}
+
+/* Form Styles */
+#new-post-form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 15px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(26, 32, 44, 0.9);
+  color: white;
+  padding: 2rem 0;
+  border-radius: 0 0 12px 12px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f6ad55;
+  transform: translateY(-3px);
+}
+
+/* Icons */
+.fas,
+.fab {
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .main-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .background-image {
+    background-attachment: scroll;
+  }
+}

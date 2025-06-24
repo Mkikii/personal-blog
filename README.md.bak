@@ -1,0 +1,37 @@
+# My Personal Travel Journal
+
+![Travel Journal Screenshot](screenshot.jpg)
+
+Welcome to my personal travel journal! This is where I document all my adventures around the world.
+
+## Features
+
+- ✈️ **Personalized Interface** with my own photos and styling
+- 📝 **Journal Entries** for each trip with location details
+- 📅 **Timeline View** showing when adventures happened
+- 📸 **Photo Integration** to remember special moments
+- ✏️ **Easy Editing** to update memories later
+- 🌎 **Travel Map** (coming soon!)
+
+## How to Use
+
+1. **Add New Adventures**:
+   - Click "Share New Adventure"
+   - Fill in the details of your trip
+   - Add a photo URL if you have one
+   - Click "Save Adventure"
+
+2. **View Memories**:
+   - Click any adventure in the left panel
+   - See all the details appear on the right
+
+3. **Edit/Delete**:
+   - Open an adventure
+   - Click "Edit" to make changes
+   - Click "Delete" to remove (with confirmation)
+
+## Setup for Local Development
+
+1. Install JSON Server:
+   ```bash
+   npm install -g json-server
