@@ -32,9 +32,9 @@ body {
 }
 
 .header-title {
-  font-family: "Pacifico", cursive;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  color: #f6ad55;
+  color: #f;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,7 +100,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #f6ad55;
+  color:rgb(68, 33, 194);
   transform: translateY(-3px);
 }
 

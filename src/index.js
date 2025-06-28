@@ -5,30 +5,43 @@ let posts = [
     "title": "My First Solo Trip to Bali",
     "location": "Bali, Indonesia",
     "content": "This was my first time traveling alone and it was absolutely transformative. I stayed in Ubud for two weeks, practicing yoga every morning and exploring rice terraces in the afternoons. The locals were so welcoming and the food was incredible!",
-    "image": "images/pexels-planespotter-geneva-1877406873-32667453.jpg",
-    "date": "2025-05-15T00:00:00.000Z"
+    "image": "images/bali-trip.jpg",
+    "date": "2023-05-15T00:00:00.000Z"
   },
   {
     "id": 2,
     "title": "Weekend in the Mountains",
     "location": "Rocky Mountains, Colorado",
     "content": "A quick getaway to recharge in nature. Hiked to Dream Lake at sunrise - the views were worth the early wakeup call! Saw elk, moose, and even a black bear from a safe distance.",
-    "image": "images/pexels-skydream-14187938.jpg",
-    "date": "2025-07-22T00:00:00.000Z"
+    "image": "images/rocky-mountains.jpg",
+    "date": "2023-07-22T00:00:00.000Z"
   },
   {
     "id": 3,
     "title": "Cultural Exploration in Kyoto",
     "location": "Kyoto, Japan",
     "content": "Spent 10 days immersed in Japanese culture. Highlights included tea ceremonies, visiting Fushimi Inari Shrine at dawn, and trying authentic kaiseki meals. The autumn leaves were breathtaking!",
-    "image": "images/pexels-camcasey-1157255.jpg",
-    "date": "2025-11-10T00:00:00.000Z"
+    "image": "images/kyoto.jpg",
+    "date": "2022-11-10T00:00:00.000Z"
   }
 ];
+
+// --- Storage Helpers ---
+function saveToStorage() {
+    localStorage.setItem('posts', JSON.stringify(posts));
+}
+
+function loadFromStorage() {
+    const stored = localStorage.getItem('posts');
+    if (stored) {
+        posts = JSON.parse(stored);
+    }
+}
 
 document.addEventListener('DOMContentLoaded', main);
 
 function main() {
+    loadFromStorage();
     displayPosts();
     addNewPostListener();
     setupImagePreview();
@@ -173,6 +186,7 @@ function addNewPostListener() {
             
             // Add to our posts array
             posts.push(newPost);
+            saveToStorage();
             
             // Show success message
             submitButton.innerHTML = '<i class="fas fa-check"></i> Saved!';
@@ -277,7 +291,7 @@ function updatePost(event) {
             content,
             image: image || null
         };
-        
+        saveToStorage();
         displayPosts();
         
         // Re-fetch and display the updated post
@@ -294,6 +308,7 @@ function deletePost(event) {
     
     if (confirm('Are you sure you want to delete this adventure? All your memories will be lost.')) {
         posts = posts.filter(post => post.id !== postId);
+        saveToStorage();
         displayPosts();
         document.getElementById('post-detail').innerHTML = `
             <div class="card-body text-center">
