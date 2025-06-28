@@ -6,7 +6,7 @@ let posts = [
     "location": "Bali, Indonesia",
     "content": "This was my first time traveling alone and it was absolutely transformative. I stayed in Ubud for two weeks, practicing yoga every morning and exploring rice terraces in the afternoons. The locals were so welcoming and the food was incredible!",
     "image": "images/pexels-planespotter-geneva-1877406873-32667453.jpg",
-    "date": "2023-05-15T00:00:00.000Z"
+    "date": "2025-05-15T00:00:00.000Z"
   },
   {
     "id": 2,
@@ -14,7 +14,7 @@ let posts = [
     "location": "Rocky Mountains, Colorado",
     "content": "A quick getaway to recharge in nature. Hiked to Dream Lake at sunrise - the views were worth the early wakeup call! Saw elk, moose, and even a black bear from a safe distance.",
     "image": "images/pexels-skydream-14187938.jpg",
-    "date": "2023-07-22T00:00:00.000Z"
+    "date": "2025-07-22T00:00:00.000Z"
   },
   {
     "id": 3,
@@ -22,7 +22,7 @@ let posts = [
     "location": "Kyoto, Japan",
     "content": "Spent 10 days immersed in Japanese culture. Highlights included tea ceremonies, visiting Fushimi Inari Shrine at dawn, and trying authentic kaiseki meals. The autumn leaves were breathtaking!",
     "image": "images/pexels-camcasey-1157255.jpg",
-    "date": "2022-11-10T00:00:00.000Z"
+    "date": "2025-11-10T00:00:00.000Z"
   }
 ];
 
